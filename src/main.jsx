@@ -1,11 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { App } from './App.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
+/*import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from "react-router-dom";*/
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Outlet, Link } from "react-router-dom";
 
 /*Estilos*/
@@ -53,7 +55,7 @@ import ErrorPage from "./error-page";
 import { Conciertos } from './components/Conciertos.jsx';
 import { Discordia } from './components/Discordia.jsx';
 import { Contacto } from './components/Contacto.jsx';
-
+/*
 const router = createBrowserRouter([
   {
     path: "/sala-spectrum/",
@@ -75,19 +77,23 @@ const router = createBrowserRouter([
     element: <Contacto/>,
     errorElement: <ErrorPage />,
   }
-]);
+]);*/
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+/*ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Header />
     <RouterProvider router={router} />
     <Footer />
   </React.StrictMode>
-);
-/*
+);*/
+
+
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Header/>
     <App />
+    <Footer/>
   </StrictMode>
 )
-*/

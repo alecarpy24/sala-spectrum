@@ -11,8 +11,8 @@ function Discordia() {
       <Header />
       <main className="w-100">
         <section className="portada-discordia py-5">
-          <div className="p-2 text-center">
-            <img className="w-md-50 w-100 py-5 py-md-0" src="src/assets/img/discordia-pag.png" />
+          <div className="p-2 text-center container">
+            <img className="w-50 py-5 py-md-0 img-discordia" src="src/assets/img/discordia-pag.png" />
           </div>
         </section>
         <section>

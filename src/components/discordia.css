@@ -17,3 +17,18 @@
     width: 100%;
     z-index: 1;
 }
+
+@media (max-width: 767px) { /* For extra small screens */
+    .portada-discordia .img-discordia{
+        width: 90% !important;
+    }
+    
+}
+
+@media (min-width: 768px) { /* For medium screens and up */
+    
+}
+
+@media (min-width: 1200px) { /* For large screens */
+    
+}
