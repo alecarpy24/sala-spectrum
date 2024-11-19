@@ -39,9 +39,9 @@ function Header() {
             <Navbar.Collapse className="bg-light" id="basic-navbar-nav ">
               <Nav className="me-auto menu menu-movil">
                 <Nav.Link className="" href="/">INICIO</Nav.Link>
-                <Nav.Link className="" href="/">Conciertos</Nav.Link>
-                <Nav.Link className="" href="/">Discordia</Nav.Link>
-                <Nav.Link className="" href="/">Contacto</Nav.Link>
+                <Nav.Link className="" href="/sala-spectrum/conciertos">Conciertos</Nav.Link>
+                <Nav.Link className="" href="/sala-spectrum/discordia">Discordia</Nav.Link>
+                <Nav.Link className="" href="/sala-spectrum/contacto">Contacto</Nav.Link>
               </Nav>
             </Navbar.Collapse>
          

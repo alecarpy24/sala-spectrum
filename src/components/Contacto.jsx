@@ -14,7 +14,7 @@ function Contacto() {
                             <div className="col-md-12 col-10 caja-trans p-5 mb-0"><h1 className=" fs-1 fw-bold text-uppercase mb-4 ">Contáctanos</h1>
                                 <p className="fs-1 fs-md-4  fw-light text-uppercase mb-3 lh-sm">Visitadnos cuando deseéis</p>
                                 <p className="fs-5 fs-md-1 fw-light text-uppercase mb-4 lh-sm">Os damos la bienvenida al mundo del Heavy Metal</p>
-                                <div className="contacto-social fs-5 fw-light ">
+                                <div className="contacto-social fs-6 fw-light ">
                                     <a href="tel:669546444" className=" fw-light d-block mb-2"><FontAwesomeIcon className="px-1" icon="fa-solid fa-phone" />Teléfono: 669 546 444</a>
                                     <a target="_blank" href="https://www.instagram.com/salaspectrum/?hl=en" className="mb-2  d-block"><FontAwesomeIcon className="px-1" icon="fa-brands fa-instagram" />Instagram: salaspectrum</a>
                                     <a href="mailto:salaspectrum@gmail.com" className="mb-2 d-block" ><FontAwesomeIcon className="px-1" icon="fa-solid fa-envelope-open-text" />  Correo: salaspectrum@gmail.com</a>

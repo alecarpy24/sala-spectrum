@@ -23,7 +23,7 @@ function Inicio() {
 
     return (
         <>
-            
+
             <main className="w-100">
                 <section className="portada bg-fuego">
                     <div className="container d-flex align-items-center justify-content-center">
@@ -33,14 +33,15 @@ function Inicio() {
 
                 <div className="portada-new">
                     <section className="section-fire container ">
-                        <article className="caja-trans d-flex align-items-center justify-content-center">
-                            <img className="img-portada" src="../src\assets\img\spectrumOctubre2024-729x1024.jpeg" />
-                        </article>
-                        <article className="caja-trans d-flex flex-column align-items-center justify-content-center">
-                            <EventsList/>
-                            <a className="all-events" href="/conciertos">VER TODOS LOS EVENTOS</a>
-                        </article>
-
+                        <div className="row align-items-center justify-content-center">
+                            <article className="col-9 col-md-12 p-1 p-md-3  d-flex align-items-center justify-content-center caja-trans">
+                                <img className="img-portada" src="./src\assets\img\spectrumOctubre2024-729x1024.jpeg" />
+                            </article>
+                            <article className=" col-9 col-md-12 caja-trans d-flex flex-column align-items-center justify-content-center">
+                                <EventsList />
+                                <a className="all-events" href="/conciertos">VER TODOS LOS EVENTOS</a>
+                            </article>
+                        </div>
 
                     </section>
                 </div>
@@ -82,7 +83,7 @@ function Inicio() {
                 </section>
 
             </main>
-            
+
         </>
     )
 }

@@ -113,9 +113,7 @@
     max-width: 230px;
 }
 
-.reviews h2{
-    font-size: 4rem;
-}
+
 
 .cta-sala .cta-sala-card-1, .cta-sala
 .cta-sala-card-2{
@@ -134,13 +132,7 @@
     max-height: 400px;
     object-fit: cover;
 }
-.reviews {
-    
-}
-.reviews h2{
-    color:#FFD700;
-    border-bottom: 2px solid #fff;
-}
+
 
 
 /*MOVIL*/

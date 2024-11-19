@@ -51,3 +51,33 @@ footer p, footer ul a{
 .footer-legal a:hover{
     color: #FFD700;
 }
+
+.reviews {
+    
+}
+.reviews h2{
+    color:#FFD700;
+    border-bottom: 2px solid #fff;
+    font-size: 4rem;
+    line-height: 3.2rem;
+}
+
+@media (max-width: 767px) { /* For extra small screens */
+    .reviews h2{
+        font-size: 3.2rem;
+    }
+
+    .cta-footer h2{
+        font-size: 3.5rem;
+       
+    }
+    
+}
+
+@media (min-width: 768px) { /* For medium screens and up */
+    
+}
+
+@media (min-width: 1200px) { /* For large screens */
+    
+}

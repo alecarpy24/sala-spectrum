@@ -4,8 +4,8 @@ import './eventcard.css';
 
 function EventCard({ eventName, eventInfo, eventDate, eventMonth, eventDay,img }) {
     return (
-        <div className="row event align-items-center justify-content-center flex-column-reverse flex-md-row text-center text-md-start">
-            <div className="box-date col-md-2 col-sm-12">
+        <div className="row event align-items-center justify-content-center flex-column-reverse flex-md-row text-center text-md-start my-3 mx-0 mx-md-5 my-md-5">
+            <div className="box-date col-md-2 col-sm-12 mt-3 mt-md-0">
                 <p className="i-date">{eventDate}</p>
                 <p className="i-month">{eventMonth}</p>
                 <p className="i-day">{eventDay}</p>
