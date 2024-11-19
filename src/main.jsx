@@ -92,8 +92,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Header/>
     <App />
-    <Footer/>
   </StrictMode>
 )

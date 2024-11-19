@@ -15,10 +15,10 @@ function Header() {
           <img src={headerLogo} />
           <nav>
             <ul className="menu-pc d-flex">
-              <li><a className="menu-enlace" href='/sala-spectrum/'> Inicio</a></li>
-              <li><a className="menu-enlace" href="/sala-spectrum/conciertos">Conciertos</a></li>
-              <li><a className="menu-enlace" href='/sala-spectrum/discordia'>Discordia</a></li>
-              <li><a className="menu-enlace" href='/sala-spectrum/contacto'>Contacto</a></li>
+              <li><Link className="menu-enlace" to="/">Inicio</Link></li>
+              <li><Link className="menu-enlace" to="/conciertos">Conciertos</Link></li>
+              <li><Link className="menu-enlace" to="/discordia">Discordia</Link></li>
+              <li><Link className="menu-enlace" to="/contacto">Contacto</Link></li>
             </ul>
           </nav>
           <div className="language-container d-flex align-items-center">
@@ -29,23 +29,22 @@ function Header() {
       </div>
 
       <div className="header-container d-md-none d-sm-block w-100 caja-menu-movil">
-        <Navbar  expand="lg"  >
-          
-            <Navbar.Toggle aria-controls="basic-navbar-nav " />
-            <Navbar.Brand href="#home"> <img src="./src/assets/img/logo.svg" /></Navbar.Brand>
-            <div className="language-container d-flex align-items-center">
-              <img src="./src/assets/img/es.svg" />
-              <p>ES</p>
-            </div>
-            <Navbar.Collapse className="bg-light" id="basic-navbar-nav ">
-              <Nav className="me-auto menu menu-movil">
-                <Nav.Link className="" href="/">INICIO</Nav.Link>
-                <Nav.Link className="" href="/sala-spectrum/conciertos">Conciertos</Nav.Link>
-                <Nav.Link className="" href="/sala-spectrum/discordia">Discordia</Nav.Link>
-                <Nav.Link className="" href="/sala-spectrum/contacto">Contacto</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-         
+        <Navbar expand="lg"  >
+
+          <Navbar.Toggle aria-controls="basic-navbar-nav " />
+          <Navbar.Brand href="/"> <img src="./src/assets/img/logo.svg" /></Navbar.Brand>
+          <div className="language-container d-flex align-items-center">
+            <img src="./src/assets/img/es.svg" />
+            <p>ES</p>
+          </div>
+          <Navbar.Collapse className="bg-light" id="basic-navbar-nav ">
+            <Nav className="me-auto menu menu-movil">
+            <Nav.Link as={Link} to="/">INICIO</Nav.Link>
+                <Nav.Link as={Link} to="/conciertos">Conciertos</Nav.Link>
+                <Nav.Link as={Link} to="/discordia">Discordia</Nav.Link>
+                <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>            </Nav>
+          </Navbar.Collapse>
+
         </Navbar>
       </div>
     </>
@@ -63,10 +62,10 @@ export { Header };
                 <img src="./src/assets/img/logo.svg" />
                 <nav>
                     <ul className="menu d-none d-lg-flex">
-                        <li><a className="menu-enlace" href='/inicio'> Inicio</a></li>
-                        <li><a className="menu-enlace" href='/conciertos'>Conciertos</a></li>
-                        <li><a className="menu-enlace" href='/discordia'>Discordia</a></li>
-                        <li><a className="menu-enlace" href='/contacto'>Contacto</a></li>
+                        <li><a className="menu-enlace" to='/inicio'> Inicio</a></li>
+                        <li><a className="menu-enlace" to='/conciertos'>Conciertos</a></li>
+                        <li><a className="menu-enlace" to='/discordia'>Discordia</a></li>
+                        <li><a className="menu-enlace" to='/contacto'>Contacto</a></li>
                     </ul>
                 </nav>
                 <div className="language-container d-flex align-items-center">

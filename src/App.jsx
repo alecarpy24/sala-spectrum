@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 //import { HashRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -41,8 +41,9 @@ import ErrorPage from "./error-page";
 import { Conciertos } from './components/Conciertos.jsx';
 import { Discordia } from './components/Discordia.jsx';
 import { Contacto } from './components/Contacto.jsx';
+import { Root } from './components/Root.jsx';
 // Define your routes using `createBrowserRouter`
-const router = createBrowserRouter(
+/*const router = createHashRouter(
   [
     {
       path: "/", 
@@ -64,7 +65,32 @@ const router = createBrowserRouter(
   {
     basename: "/sala-spectrum", // Specify your deployment path here
   }
-);
+);*/
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "",
+        element: <Inicio />,
+      },
+      {
+        path: "conciertos",
+        element: <Conciertos />,
+      },
+      {
+        path: "discordia",
+        element: <Discordia />,
+      },
+      {
+        path: "contacto",
+        element: <Contacto />,
+      }
+    ]
+  }
+]);
 
 function App() {
   const [count, setCount] = useState(0);
