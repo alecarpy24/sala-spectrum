@@ -2,6 +2,7 @@ import React from "react";
 import { CardCarousel } from "./CardCarousel";
 import "./footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 
 function Footer() {
     const cards = [
@@ -23,7 +24,7 @@ function Footer() {
                         <div className="col-12 col-md-5">
                             <h2 className="text-center mb-4">¡Dejad que la música os una a nosotros!</h2>
                             <p className="text-center mb-4 cta-text">Podéis encontrar la Sala Spectrum en Instagram, donde compartimos noticias, eventos y contenido relacionado con la música que os apasiona.</p>
-                            <div className="d-flex justify-content-center"><a href="/contacto" className="b-info text-center">MÁS INFORMACIÓN</a></div>
+                            <div className="d-flex justify-content-center"><Link to="/contacto" className="b-info text-center">MÁS INFORMACIÓN</Link></div>
                         </div>
                     </div>
                 </div>

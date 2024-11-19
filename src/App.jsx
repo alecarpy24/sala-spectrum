@@ -42,30 +42,9 @@ import { Conciertos } from './components/Conciertos.jsx';
 import { Discordia } from './components/Discordia.jsx';
 import { Contacto } from './components/Contacto.jsx';
 import { Root } from './components/Root.jsx';
+import { ScrollToTop } from './components/ScrollToTop.jsx';
 // Define your routes using `createBrowserRouter`
-/*const router = createHashRouter(
-  [
-    {
-      path: "/", 
-      element: <Inicio />,
-    },
-    {
-      path: "/conciertos",
-      element: <Conciertos />,
-    },
-    {
-      path: "/contacto",
-      element: <Contacto />,
-    },
-    {
-      path: "/discordia",
-      element: <Discordia />,
-    },
-  ],
-  {
-    basename: "/sala-spectrum", // Specify your deployment path here
-  }
-);*/
+/*
 const router = createHashRouter([
   {
     path: "/",
@@ -90,6 +69,26 @@ const router = createHashRouter([
       }
     ]
   }
+]);
+*/
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <ScrollToTop /> {/* Ensures scrolling happens on route changes */}
+        <Root />
+      </>
+    ),
+    errorElement: <ErrorPage />,
+    children: [
+      { path: "", element: <Inicio /> },
+      { path: "conciertos", element: <Conciertos /> },
+      { path: "discordia", element: <Discordia /> },
+      { path: "contacto", element: <Contacto /> },
+    ],
+  },
 ]);
 
 function App() {

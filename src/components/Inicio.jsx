@@ -1,6 +1,7 @@
 
 import { EventsList } from "./EventsList";
 import { CustomCarousel } from "./CustomCarousel";
+import { Link } from "react-router-dom";
 
 
 import './inicio.css'
@@ -39,7 +40,7 @@ function Inicio() {
                             </article>
                             <article className=" col-9 col-md-12 caja-trans d-flex flex-column align-items-center justify-content-center">
                                 <EventsList />
-                                <a className="all-events" href="/conciertos">VER TODOS LOS EVENTOS</a>
+                                <Link className="all-events" to="/conciertos">VER TODOS LOS EVENTOS</Link>
                             </article>
                         </div>
 
