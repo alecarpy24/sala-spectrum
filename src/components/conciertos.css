@@ -1,0 +1,29 @@
+.portada-conciertos h1{
+    font-size: 4.2rem;
+    color: #C0BFA5;
+    font-weight: 700;
+}
+.portada-conciertos{
+    
+        background-image: url(/sala-spectrum/src/assets/img/fondo-fuego.png);
+        background-position: center center;
+        background-repeat: repeat-y;
+        background-size: contain;
+    
+}
+.lista-eventos{
+    background-color: #1a1a1a;
+}
+@media (max-width: 767px) { /* For extra small screens */
+    .portada-conciertos h1{
+        font-size: 2.3rem;
+    }
+}
+
+@media (min-width: 768px) { /* For medium screens and up */
+    
+}
+
+@media (min-width: 1200px) { /* For large screens */
+    
+}

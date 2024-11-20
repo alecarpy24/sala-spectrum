@@ -29,7 +29,7 @@ function Discordia() {
                 <FontAwesomeIcon className="p-4 fs-1 fw-light" icon="fa-solid fa-angles-down" />
                 <p className="text-center fs-3 fw-bold">EVENTOS PASADOS</p>
               </div>
-              <div className=" col-10 bg-dark rounded mb-4">
+              <div className=" col-10 eventosListaPasados rounded mb-4">
                 <EventsListPast />
               </div>
             </div>

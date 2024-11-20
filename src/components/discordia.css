@@ -19,6 +19,9 @@ background-color: #000;
     background-position: center bottom;
 }
 
+.eventosListaPasados {
+    background-color: #1a1a1a;
+}
 @media (max-width: 767px) { /* For extra small screens */
     .portada-discordia .img-discordia{
         width: 90% !important;
