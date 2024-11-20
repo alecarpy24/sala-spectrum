@@ -4,6 +4,9 @@ import './discordia.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { EventsListPast } from "./EventsListPast";
 
+//ASSETS
+import imgDiscordia from '/src/assets/img/discordia-pag.png'
+
 
 function Discordia() {
   return (
@@ -12,7 +15,7 @@ function Discordia() {
       <main className="w-100">
         <section className="portada-discordia py-5">
           <div className="p-2 text-center container">
-            <img className="w-50 py-5 py-md-0 img-discordia" src="src/assets/img/discordia-pag.png" />
+            <img className="w-50 py-5 py-md-0 img-discordia" src={imgDiscordia} />
           </div>
         </section>
         <section>
