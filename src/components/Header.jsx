@@ -6,13 +6,15 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Outlet, Link } from "react-router-dom";
 import headerLogo from '../assets/img/logo.svg';
 
+import bandera from '/./src/assets/img/es.svg'
+
 function Header() {
   return (
     <>
 
       <div className="header-container w-100 d-none d-sm-block">
         <header className="container d-flex align-items-center justify-content-between">
-          <img src={headerLogo} />
+          <Link to="/"><img src={headerLogo} /></Link>
           <nav>
             <ul className="menu-pc d-flex">
               <li><Link className="menu-enlace" to="/">Inicio</Link></li>
@@ -22,7 +24,7 @@ function Header() {
             </ul>
           </nav>
           <div className="language-container d-flex align-items-center">
-            <img src="./src/assets/img/es.svg" />
+            <img src={bandera} />
             <p>ES</p>
           </div>
         </header>

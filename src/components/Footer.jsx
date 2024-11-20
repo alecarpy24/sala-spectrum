@@ -4,12 +4,21 @@ import "./footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
 
+//ASSETS
+import footerLogo from '../assets/img/logo.svg';
+import kitDigital from '/src/assets/img/Kid-digital-info.png';
+//REVIEWS
+import imgReview1 from '/src/assets/img/reviews/client-1.png';
+import imgReview2 from '/src/assets/img/reviews/client-2.png';
+import imgReview3 from '/src/assets/img/reviews/client-3.png';
+import imgReview4 from '/src/assets/img/reviews/client-4.png';
+
 function Footer() {
     const cards = [
-        { title: 'Yesi Ruiz', text: 'Una fiesta para repetir...la del 11 de febrero Larga vida a la gresca y el jaleo 🙌🏾🔥🙌🏾🔥', date: '27/02/2024', imgSrc: 'src/assets/img/reviews/client-1.png' },
-        { title: 'Vincen T', text: 'Sala amplia, climatizada. Barra para bebidas y bar superior con zona de juegos y terraza exterior.', date: '13/02/2024', imgSrc: 'src/assets/img/reviews/client-2.png' },
-        { title: 'Valentina Grisales', text: 'Buenisimooooo!!!', date: '06/01/2024', imgSrc: 'src/assets/img/reviews/client-3.png' },
-        { title: 'María Jose Cabanillas', text: 'TRAED LA SPECTRUM DE VUELTA NECESITO MI CASA', date: '11/10/2023', imgSrc: 'src/assets/img/reviews/client-4.png' },
+        { title: 'Yesi Ruiz', text: 'Una fiesta para repetir...la del 11 de febrero Larga vida a la gresca y el jaleo 🙌🏾🔥🙌🏾🔥', date: '27/02/2024', imgSrc: imgReview1 },
+        { title: 'Vincen T', text: 'Sala amplia, climatizada. Barra para bebidas y bar superior con zona de juegos y terraza exterior.', date: '13/02/2024', imgSrc: imgReview2 },
+        { title: 'Valentina Grisales', text: 'Buenisimooooo!!!', date: '06/01/2024', imgSrc: imgReview3 },
+        { title: 'María Jose Cabanillas', text: 'TRAED LA SPECTRUM DE VUELTA NECESITO MI CASA', date: '11/10/2023', imgSrc: imgReview4 },
 
     ];
     return (
@@ -31,7 +40,7 @@ function Footer() {
                 <div className="container py-5">
                     <div className="row justify-content-center text-center text-md-start">
                         <div className=" col-12 col-md-3 mb-5">
-                            <img className="w-50 mb-3" src="src\assets\img\logo.svg" />
+                            <img className="w-50 mb-3" src={footerLogo} />
                             <p>¡Uníos a la escena en Sala Spectrum! Somos vuestra sala del Heavy Metal en Murcia. Conciertos intensos, riffs poderosos y una experiencia única.</p>
                             <div className="social-links d-flex align-items-center justify-content-center justify-content-md-start">
                                 <h3 className="m-0 ">SÍGUENOS:</h3>
@@ -77,7 +86,7 @@ function Footer() {
             </div>
             <div className="bg-white kit-digital">
                 <div className="container d-flex justify-content-center py-3">
-                    <img className="w-100 w-md-75" src="src\assets\img\Kid-digital-info.png" /></div>
+                    <img className="w-100 w-md-75" src={kitDigital} /></div>
             </div>
         </footer>
 
