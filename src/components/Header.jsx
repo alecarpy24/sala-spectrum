@@ -34,9 +34,9 @@ function Header() {
         <Navbar expand="lg"  >
 
           <Navbar.Toggle aria-controls="basic-navbar-nav " />
-          <Navbar.Brand href="/"> <img src="./src/assets/img/logo.svg" /></Navbar.Brand>
+          <Navbar.Brand href="/"> <img src={headerLogo} /></Navbar.Brand>
           <div className="language-container d-flex align-items-center">
-            <img src="./src/assets/img/es.svg" />
+            <img src={bandera} />
             <p>ES</p>
           </div>
           <Navbar.Collapse className="bg-light" id="basic-navbar-nav ">
