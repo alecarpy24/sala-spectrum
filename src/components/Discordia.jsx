@@ -12,7 +12,7 @@ import bgImage from '/src/assets/img/discordia-bg.jpg'
 function Discordia() {
   return (
     <>
-      <Header />
+      
       <main className="w-100">
         <section className="portada-discordia py-5" style={{ backgroundImage: `url(${bgImage})` }}>
           <div className="p-2 text-center container">
